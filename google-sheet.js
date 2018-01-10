@@ -69,8 +69,9 @@ $('#submit-form').on('click', function(e) {
     url: url,
     method: "GET",
     dataType: "jsonp",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
+    data: $form.serializeObject(),
+    success: function(msg){
+        console.log("success");
+    }
+  })
 })
