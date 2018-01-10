@@ -59,7 +59,7 @@ $("#foo").submit(function(event){
     event.preventDefault();
 });
 */
-
+//test gsheet insert from web form
 var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
 
