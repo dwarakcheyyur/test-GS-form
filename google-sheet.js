@@ -61,14 +61,14 @@ $("#foo").submit(function(event){
 */
 //test gsheet insert from web form
 var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
+    url = 'https://script.google.com/a/education.cloudreign.in/macros/s/AKfycbxHiX2zzZwsPJtNmsiCWgCG-GvjHNaQwClAeswvlUr5FgZRPZ4/exec&callback=?'
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
     method: "GET",
-    dataType: "json",
+    dataType: "jsonp",
     data: $form.serializeObject()
   }).success(
     // do something
