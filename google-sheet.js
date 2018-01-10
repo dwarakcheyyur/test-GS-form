@@ -68,7 +68,7 @@ $('#submit-form').on('click', function(e) {
   var jqxhr = $.ajax({
     url: url,
     method: "GET",
-    dataType: "jsonp",
+    dataType: "json",
     data: $form.serializeObject(),
     success: function(msg){
         console.log("success");
