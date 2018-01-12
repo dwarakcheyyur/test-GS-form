@@ -107,6 +107,7 @@ jQuery(document).ready(function($) {
     });
 });
 
+//new comment
 /*
 var $form = $('form.contactForm'),
     url = 'https://script.google.com/a/education.cloudreign.in/macros/s/AKfycbxHiX2zzZwsPJtNmsiCWgCG-GvjHNaQwClAeswvlUr5FgZRPZ4/exec'
