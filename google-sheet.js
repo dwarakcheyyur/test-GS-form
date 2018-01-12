@@ -10,6 +10,9 @@ $('#submit').on('click', function(e) {
     data: $form.serializeObject(),
     success: function(msg){
         console.log("success");
+        $("#sendmessage").addClass("show");     
+        $("#errormessage").removeClass("show"); 
+        $('.contactForm').find("input, textarea").val("");
     }
   })
 })
